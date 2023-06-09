@@ -1,0 +1,7 @@
+.container{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 32, 96, 0.493);
+    justify-content: right;
+    padding: 2% 0;
+}

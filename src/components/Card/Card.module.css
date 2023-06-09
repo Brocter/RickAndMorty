@@ -1,0 +1,80 @@
+.card {
+    margin-top: 5rem;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    width: 20rem;
+    height: 26rem;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px 5px rgba(186, 186, 186, 0.2);
+  }
+  
+  .closeButt {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 40px;
+    height: 10%;
+    width: 12.5%;
+  }
+  
+  .image {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    transition: opacity 0.2s ease-out;
+  }
+  
+  .nombre {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    margin: 0;
+    transition: inset 0.3s 0.3s ease-out;
+    font-weight: bolder;
+    text-transform: uppercase;
+  }
+  
+  .especie {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    bottom: 30px;
+    left: 30px;
+  }
+  .genero {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity 0.3s ease-out;
+    bottom: 60px;
+    left: 30px;
+  }
+
+  .card:hover image{
+    opacity: 0.6;
+    transition: opacity 0.5s 0.1s ease-out
+  }
+  
+  .card:hover .nombre {
+    bottom: 110px;
+    transition: inset 0.3s ease-out;
+  }
+
+  .card:hover .especie {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+  
+  .card:hover .genero {
+    opacity: 1;
+    transition: opacity 0.5s 0.1s ease-in;
+  }
+  
